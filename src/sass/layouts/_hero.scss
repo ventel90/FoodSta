@@ -1,19 +1,22 @@
-.hero {
+.hero-section {
   // position: relative;
   //     top: 50%;
   //     left: 50px;
-  display: flex;
+  
   justify-content: center;
   align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 60px;
+  // padding-right: 20px;
+  // padding-left: 20px;
+  // margin-right: auto;
+  // margin-left: auto;
+  // margin-top: 60px;
+  // margin-bottom: 50px;
+
 
   @media screen and (min-width: $tablet) {
     // justify-content: space-between;
     // margin-right: 32px;
+    display: flex;
     margin-top: 0;
     padding-right: 32px;
     padding-left: 32px;
@@ -25,10 +28,7 @@
     padding-right: 16px;
     padding-left: 16px;
   }
-}
-.container {
-}
-.hero__block {
+
   @media screen and (min-width: $tablet) {
     margin-right: -153px;
     // margin-right: 32px;
@@ -38,6 +38,22 @@
     margin-right: auto;
     margin-right: 166px;
   }
+}
+
+.hero-container{
+  display: flex;
+}
+
+.hero__block {
+  // @media screen and (min-width: $tablet) {
+  //   margin-right: -153px;
+  //   // margin-right: 32px;
+  // }
+
+  // @media screen and (min-width: $desktop) {
+  //   margin-right: auto;
+  //   margin-right: 166px;
+  // }
 }
 
 // .hero__tablet-block{
@@ -129,16 +145,17 @@
   @media screen and (min-width: $tablet) {
     display: block;
     border-radius: 50%;
-
+    margin-left: -60%;
     border: 14px solid $yellow;
-    width: 320px;
-    height: 320px;
+    max-width: 320px;
+    // height: 320px;
   }
 
   @media screen and (min-width: $desktop) {
     border: 26px solid $yellow;
-    width: 580;
-    height: 580px;
+    max-width: 580;
+    // height: 580px;
+    margin-left: 152px;
   }
 }
 
@@ -152,13 +169,13 @@
     display: flex;
     justify-content: space-between;
     top: 146px;
-    left: -7px;
+    left: -62%;
   }
 
   @media screen and (min-width: $desktop) {
     width: 593px;
     top: 266px;
-    left: -7px;
+    left: 145px;
   }
 }
 
