@@ -100,7 +100,7 @@
 }
 .footer__form-input {
   @extend %subscribe__common-input;
-  margin-right: 13px;
+
   @media screen and (min-width: $tablet) {
     width: 280px;
   }
@@ -179,4 +179,26 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+.footer__box {
+  margin-right: 13px;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.footer__form-invalid {
+  @extend %subscribe__common-invalid;
+
+  @media screen and (min-width: $tablet) {
+    bottom: -12px;
+  }
+}
+
+.footer__form-icon {
+  @extend %subscribe__common-icon;
 }

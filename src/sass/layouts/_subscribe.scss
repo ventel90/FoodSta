@@ -37,11 +37,7 @@
   @extend %subscribe__common-input;
 
   @media screen and (min-width: $tablet) {
-    margin-right: 22px;
     width: 395px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-right: 32px;
   }
 }
 .subscribe__button {
@@ -65,5 +61,32 @@
   }
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
     top: -75px;
+  }
+}
+.subscribe__form-invalid {
+  @extend %subscribe__common-invalid;
+  bottom: -19px;
+  left: 0;
+}
+.subscribe__form-icon {
+  @extend %subscribe__common-icon;
+}
+.subscribe__box-invalid {
+  position: relative;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 32px;
+  }
+}
+.subscribe__form {
+  @media screen and (min-width: $tablet) {
+    display: flex;
   }
 }

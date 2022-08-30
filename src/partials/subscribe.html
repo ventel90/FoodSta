@@ -1,5 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <section class="subscribe section" id="subscribe">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="subscribe section">
 
         <div class="subscribe__container container">
             <h2 class="subscribe__title">
@@ -10,7 +20,17 @@
                 tristique.
             </p>
             <form class="subscribe__form">
-                <input name="email-subscribe" class="subscribe__input" type="email" placeholder="Enter your email">
+                <div class="subscribe__box-invalid"><input required name="email-subscribe" class="subscribe__input"
+                        type="email" placeholder="Enter your email">
+                    <div class="subscribe__form-invalid">
+                        <img class="subscribe__form-icon" src="./images/images-kutsyi_vasyl/invalid-icon.png"
+                            alt="invalid-icon">
+                        Not a valid email address (example@email.com)
+
+                    </div>
+                </div>
+
+
                 <button class="subscribe__button" type="submit">
                     Subscribe
                 </button>
@@ -32,3 +52,6 @@
             </picture>
         </div>
     </section>
+</body>
+
+</html>
