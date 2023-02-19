@@ -1,65 +1,36 @@
-
-<header class="header" data-header>
-  <div class="container header_container">
-    <a class="logo header__logo" href="./index.html">
-    <svg class="header__logo" width="66" height="52">
-    <use href="./images/sprite.svg#logo"></use>
-    </svg>
-    </a>
-    <button class="mob-menu__btn" type="button" data-menu-open>
-      <svg class="mob-menu__icon" width="28" height="28">
-        <use href="./images/sprite.svg#gg_menu"></use>
-      </svg>
-    </button>
-    <nav class="nav header__nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a class="nav__link nav__link--current" href="#hero">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#offerings">About</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#customer">Service</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#favorites">Menu</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#subscribe">Contact</a>
-        </li>
-      </ul>
-      <button class="header__btn" type="button">Order Now</button>
-    </nav>
-  </div>
-
-  <div class="menu-overlay" data-menu>
-    <div class="menu-container">
-      <button class="mob-menu__btn-close" type="button" data-menu-close>
-        <svg class="mob-menu__icon-close" width="24" height="24">
-        <use href="./images/sprite.svg#menu_close"></use>
-        </svg>
-      </button>
-      <nav class="nav menu__nav">
-        <ul class="nav__list menu__list">
-          <li class="nav__item menu__item">
-            <a class="nav__link" href="#hero">Home</a>
-          </li>
-          <li class="nav__item menu__item">
-            <a class="nav__link" href="#offerings">About</a>
-          </li>
-          <li class="nav__item menu__item">
-            <a class="nav__link" href="#customer">Service</a>
-          </li>
-          <li class="nav__item menu__item">
-            <a class="nav__link" href="#favorites">Menu</a>
-          </li>
-          <li class="nav__item menu__item">
-            <a class="nav__link" href="#subscribe">Contact</a>
-          </li>
-        </ul>
-      </nav>
+<header class="header" id="home">
+    <div class="container header__container">
+        <!-- Logo link svg -->
+        <a class="header__logo-link" href="#home" target="_blank" rel="noopener noreferrer" aria-label="Logo Link to the main page of the restaurant">
+            <svg class="header__logo-svg img" width="66" height="52">
+                <use href="./images/symbol-defs.svg#Group-60"></use>
+            </svg>
+        </a>
+        <!-- Header modal btn -->
+        <button type="button" class="header__modal-btn" data-menu-open aria-label="Open nav menu">
+            <svg class="header__modal-btn-svg img" width="30" height="25">
+                <use href="./images/symbol-defs.svg#gg_menu"></use>
+            </svg>
+        </button>
+        <nav class="site-nav header__nav nav" data-menu>
+            <ul class="nav__header lst">
+                <li class="nav__list-item "> <a class="nav__list-link header__nav--current lnk" href="#home"> Home</a>
+                    <button type="button" class="nav__cls-btn" data-menu-close aria-label="Close nav menu">
+                        <svg class="nav__cls-svg img" width="24" height="24">
+                            <use href="./images/symbol-hero.svg#cls-menu"></use>
+                        </svg>
+                    </button></li>
+                <li class="nav__list-item "><a class="nav__list-link lnk" href="#About"> About</a></li>
+                <li class="nav__list-item "><a class="nav__list-link lnk" href="#Service"> Service</a></li>
+                <li class="nav__list-item "><a class="nav__list-link lnk" href="#Menu"> Menu</a></li>
+                <li class="nav__list-item "><a class="nav__list-link lnk" href="#Contact"> Contact</a></li>
+            </ul>
+            <!-- Close menu btn -->
+            
+            <!-- ^^^^^^^^^^^^^^ -->
+            <button type="button" class="header__order-btn button" data-modal-open>
+            Order Now
+            </button>
+        </nav>
     </div>
-  </div>
 </header>
-

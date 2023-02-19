@@ -1,0 +1,211 @@
+
+.footer
+{
+    margin-bottom: -50px;   
+ &__container
+    {    
+        @media screen and (max-width:768px)
+        {   
+            background-image:
+            url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-2-1x.jpg'),
+            url('/src/images/footer/nik/footer-480-3-1x.jpg')
+            ;
+            background-size:
+             110px 300px,
+             253px 66px,
+             110px 105px;
+            background-position:
+            100% 25px,
+            50% 100%,
+            10px 130px;
+
+            background-repeat: no-repeat; 
+       }
+
+        
+
+
+       @media screen and (min-width:1280px)
+       {   
+            background-image:
+            url('/src/images/footer/nik/footer-480-1-1x.jpg'),
+            url('/src/images/footer/nik/footer-768-1-1x.jpg');
+
+       
+           background-size:
+           180px 365px,
+           100% ;
+            
+           background-position:
+           100% 25px,
+           0 100%;
+      
+           background-repeat: no-repeat; 
+      }
+        min-width: 320px;
+        padding: 60px 20px;
+
+
+    }    
+
+
+    // @media screen and (min-width:1280px)
+    //    {
+    //     background-image: url('/src/images/footer/nik/footer-1280-1-1x.jpg');
+    //     background-repeat: no-repeat;
+    //     background-size: 100%;
+    //     background-position: 0 100%;
+    //    }
+
+    &__nav{
+        display: flex;
+        margin-bottom: 40px;
+        @include mq(tab)
+        {
+            align-items: center;
+        }
+        }
+   &__logo{
+        margin-right: 60px;
+    }
+    &__logo-link{
+        @include mq(tab)
+        {
+        margin-right: 145px;
+        }
+    }
+    &__list {
+    justify-content: center;
+    display: flex;
+    @media screen and (max-width:480px)
+    {
+        flex-direction: column;
+    }
+    }        
+    &__list-item:not(:last-child)
+    {   
+        @include mq(mob){
+        margin-right:  28px;
+                        }
+        @media screen and (max-width:480px) 
+        {
+            margin-bottom: 28px;
+        }           
+    }
+    &__list-pivacy{
+        display: flex;
+        margin-bottom: 40px;    
+        gap: 32px;
+    }
+    &__privacy-link{
+        cursor: pointer;
+        color: var(--cl-green-light);
+    }
+    &__list-pivacy-link{
+        cursor: pointer;
+        color: var(--cl-green-light);
+    }
+    &__policy{
+     display: flex; 
+        margin-bottom: 60px;
+        @include mq(mob)
+        {
+            display: flex;
+            margin-left: auto;
+            margin-bottom: 100px;
+        }
+        @include mq(desk)
+        {
+            display: flex;
+            margin-left: auto; 
+        }
+      }
+    &__reserved{
+        @include mq(tab){
+            margin-left: auto;
+        }
+    text-align: center;
+                }
+}
+.footer-subscribe{
+    @include mq(tab)
+    {
+        margin-left: auto;
+    }
+    margin-bottom: 20px;
+    &__form{
+        display: flex;
+       @media screen and ( max-width:768px) {
+           
+             flex-direction: column;
+        }
+    } 
+    &__title{
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    &__input{
+        position: relative;
+    @include fonts(12, 400, 1.5);
+    padding: 12px 12px;
+    width: 100%;
+    height: 42px;
+    @include mq(tab) {
+    width: 450px;
+    margin-right: 22px;
+    }
+
+    @include mq(desk) {
+    width: 358px;
+    margin-right: 12px;
+    }
+    cursor: pointer;
+    border: 1px solid var(--cl-yellow);
+    border-radius: 30;
+    color:var(--almost-black);
+    background-color: transparent;
+    outline: transparent;
+    transition: border var(--animat);
+
+    &:valid:not(:placeholder-shown) {
+    border-color: var(--cl-green-dark);
+    }
+    
+    &:invalid:not(:placeholder-shown) {
+    border-color: #FF705D;
+    }
+    &:invalid:not(:placeholder-shown) + .subscribe-form__error {
+    opacity: 1;
+    transform: translateY(45px);
+    }
+        @include mq(mob)
+        {
+            width: 280px;
+        }
+        @media screen and (min-width:768px) {
+            width: 280px;
+            
+        }
+    }
+
+}
+.class{
+    @include mq(desk)
+    {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+.class2{
+    margin-left: auto;
+}
+.policy{
+    @include mq(tab)
+    {
+        display: flex;
+    }
+}

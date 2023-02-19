@@ -1,0 +1,220 @@
+.offerings {
+  
+  // mobile screen 320px
+  background-image: url(../images/offerings/bg-offerings@1x_320.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/offerings/bg-offerings@2x_320.png);
+  }
+
+  // mobile screen 480px
+  @include mq(mob-only) {
+    background-image: url(../images/offerings/bg-offerings@1x_480.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-offerings@2x_480.png);
+    }
+  }
+
+  // tablet screen 768px
+  @include mq(tab) {
+    background-image: url(../images/offerings/bg-offerings@1x_768.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-offerings@2x_768.png);
+    }
+  }
+
+  // desktop screen 1280px
+  @include mq(desk) {
+    background-image: url(../images/offerings/bg-offerings@1x_1280.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/bg-offerings@2x_1280.png);
+    }
+  }
+
+  background-color: var(--cl-white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__inner {
+    @include mq(desk) {
+      justify-content: center;
+      align-items: flex-end;
+      display: flex;
+    }
+  }
+
+  &__img--position {
+    margin-bottom: 60px;
+    @include mq(desk) {
+      margin-bottom: 0;
+      margin-right: 90px;
+    }
+  }
+
+  &__content {
+    @include mq(desk) {
+      max-width: 573px;
+    }
+  }
+
+  &__title--position {
+    margin-bottom: 28px;
+
+    @include mq(tab) {
+      margin-bottom: 20px;
+    }
+
+    @include mq(tab-only) {
+      max-width: 526px;
+    }
+  }
+
+  &__desc {
+    @include mq(tab) {
+      @include fonts(16px, 400, 18.75px);
+      max-width: 500px;
+    }
+
+    @include mq(desk) {
+      @include fonts(16px, 400, 24px);
+    }
+
+    &--position {
+      margin-bottom: 28px;
+      @include mq(desk) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__lst {
+    @include card-set(28px);
+
+    @include mq(tab) {
+      gap: 116px;
+      flex-wrap: nowrap;
+    }
+
+    @include mq(desk) {
+      gap: 67px;
+    }
+
+    &--position {
+      margin-bottom: 28px;
+      @include mq(tab) {
+        margin-bottom: 40px;
+      }
+      @include mq(desk) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__caption {
+    @include fonts(18px, 700, 21.09px);
+
+    @include mq(desk) {
+      @include fonts(18px, 700, 25.2px);
+    }
+  }
+
+  &__txt {
+    @include mq(desk) {
+      @include fonts(14px, 400, 21px);
+    }
+  }
+
+  &__item {
+    position: relative;
+    @include card-set(16px);
+    padding-top: 56px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--cl-white);
+    }
+
+    @for $i from 1 through 2 {
+      &:nth-child(2n + #{$i}) {
+        &::before {
+          background-image: url(../images/offerings/icon-#{$i}.svg);
+        }
+      }
+    }
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__btn {
+    min-width: 106px;
+    height: 40px;
+    padding: 0;
+
+    @include fonts(13px, 500, 19.5px);
+
+    background-color: var(--cl-white);
+    color: var(--cl-almost-black);
+    border: 2px solid var(--cl-green-dark);
+    border-radius: 30px;
+
+    transition: border-color var(--animat);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--cl-white);
+      border-color: var(--cl-green-btn-dark);
+    }
+  }
+
+    &__lnk {
+    @include centered-flex;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    @include fonts(13.67px, 400, 20.5px);
+
+    color: var(--cl-black);
+
+    transition: color var(--animat), text-decoration var(--animat);
+
+    @include mq(desk) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--cl-green-btn-dark);
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+
+    transition: fill var(--animat);
+  }
+}

@@ -1,136 +1,328 @@
-<section class="favorites secrion" id="favorites">
-    <div class="favorites_container container">
-        <h2 class="favorites_title">Some of Our Favorites</h2>
-        <p class="favorites_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <ul class="favorites_list list cards-set">
-            <li class="favorites_item card-item">
-                <picture class="favorites_img">
-                    <source media="(min-width:1280px)" srcset="
-              ./images/fotofood/Desktop/gamburger@1x.png 1x,
-              ./images/fotofood/Desktop/gamburger@2x.png 2x
-            " />
-
-                    <source media="(min-width:768px)" srcset="
-              ./images/fotofood/Tablet/gamburger@1x.png 1x,
-              ./images/fotofood/Tablet/gamburger@2x.png 2x
-            " />
-
-                    <source media="(max-width:767px)" srcset="
-              ./images/fotofood/Mobile/gamburger@1x.png 1x,
-              ./images/fotofood/Mobile/gamburger@2x.png 2x
-            " />
-
-                    <img class="favorites_photo" src="./images/fotofood/Desktop/gamburger@1x.png" alt="Gamburger"
-                        width="223" height="223" />
-                </picture>
-            </li>
-            <li class="favorites_item card-item">
-                <picture class="favorites_img">
-                    <source media="(min-width:1280px)" srcset="
-              ./images/fotofood/Desktop/Pasta@1x.png 1x,
-              ./images/fotofood/Desktop/Pasta@2x.png 2x
-            " />
-
-                    <source media="(min-width:768px)" srcset="
-              ./images/fotofood/Desktop/Pasta@1x.png 1x,
-              ./images/fotofood/Desktop/Pasta@2x.png 2x
-            " />
-
-                    <source media="(max-width:767px)" srcset="
-              ./images/fotofood/Desktop/Pasta@1x.png 1x,
-              ./images/fotofood/Desktop/Pasta@2x.png 2x
-            " />
-
-                    <img class="favorites_photo" src="./images/fotofood/Desktop/Pasta@1x.png" alt="Pasta" width="223"
-                        height="223" />
-                </picture>
-            </li>
-            <li class="favorites_item card-item">
-                <picture class="favorites_img">
-                    <source media="(min-width:1280px)" srcset="
-              ./images/fotofood/Desktop/pizza@1x.png 1x,
-              ./images/fotofood/Desktop/pizza@2x.png 2x
-            " />
-
-                    <source media="(min-width:768px)" srcset="
-              ./images/fotofood/Desktop/pizza@1x.png 1x,
-              ./images/fotofood/Desktop/pizza@2x.png 2x
-            " />
-
-                    <source media="(max-width:767px)" srcset="
-              ./images/fotofood/Desktop/pizza@1x.png 1x,
-              ./images/fotofood/Desktop/pizza@2x.png 2x
-            " />
-
-                    <img class="favorites_photo" src="./images/fotofood/Desktop/pizza@1x.png" alt="Gamburger"
-                        width="223" height="223" />
-                </picture>
-            </li>
-            <li class="favorites_item card-item img_fav">
-                <picture class="favorites_img">
-                    <source media="(min-width:1280px)" srcset="
-              ./images/fotofood/Desktop/chicken@1x.png 1x,
-              ./images/fotofood/Desktop/chicken@2x.png 2x
-            " />
-
-                    <source media="(min-width:768px)" srcset="
-              ./images/fotofood/Desktop/chicken@1x.png 1x,
-              ./images/fotofood/Desktop/chicken@2x.png 2x
-            " />
-
-                    <source media="(max-width:767px)" srcset="
-              ./images/fotofood/Desktop/chicken@1x.png 1x,
-              ./images/fotofood/Desktop/chicken@2x.png 2x
-            " />
-
-                    <img class="favorites_photo " src="./images/fotofood/Desktop/chicken@1x.png" alt="Gamburger"
-                        width="223" height="223" />
-                </picture>
-            </li>
-            <li class="favorites_item card-item img_fav">
-                <picture class="favorites_img">
-                    <source media="(min-width:1280px)" srcset="
-              ./images/fotofood/Desktop/salat@1x.png 1x,
-              ./images/fotofood/Desktop/salat@2x.png 2x
-            " />
-
-                    <source media="(min-width:768px)" srcset="
-              ./images/fotofood/Desktop/salat@1x.png 1x,
-              ./images/fotofood/Desktop/salat@2x.png 2x
-            " />
-
-                    <source media="(max-width:767px)" srcset="
-              ./images/fotofood/Desktop/salat@1x.png 1x,
-              ./images/fotofood/Desktop/salat@2x.png 2x
-            " />
-
-                    <img class="favorites_photo " src="./images/fotofood/Desktop/salat@1x.png" alt="Salat" width="223"
-                        height="223" />
-                </picture>
-            </li>
-            <li class="favorites_item card-item img_fav">
-                <picture class="favorites_img">
-                    <source media="(min-width:1280px)" srcset="
-              ./images/fotofood/Desktop/borshch@1x.png 1x,
-              ./images/fotofood/Desktop/borshch@2x.png 2x
-            " />
-
-                    <source media="(min-width:768px)" srcset="
-              ./images/fotofood/Desktop/borshch@1x.png 1x,
-              ./images/fotofood/Desktop/borshch@2x.png 2x
-            " />
-
-                    <source media="(max-width:767px)" srcset="
-              ./images/fotofood/Desktop/borshch@1x.png 1x,
-              ./images/fotofood/Desktop/borshch@2x.png 2x
-            " />
-
-                    <img class="favorites_photo " src="./images/fotofood/Desktop/borshch@1x.png" alt="Borshch"
-                        width="223" height="223" />
-                </picture>
-            </li>
-        </ul>
-    </div>
+<section class="section favorites" id="Menu">
+  <div class="container">
+    <h2 class="section-title favorites__title">Some of Our Favorites</h2>
+    <p class="favorites__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="lst favorites__lst">
+      <li class="lnk favorites__item">
+        <div class="favorites__wrapp">
+          <picture class="favorites__img">
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/gamburger-1200-1x.webp 1x,
+                ./images/favorites/gamburger-1200-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/gamburger-768-1x.webp 1x,
+                ./images/favorites/gamburger-768-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 767px)"
+              srcset="
+                ./images/favorites/gamburger-480-1x.webp 1x,
+                ./images/favorites/gamburger-480-2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/gamburger-1200-1x.jpg 1x,
+                ./images/favorites/gamburger-1200-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/gamburger-768-1x.jpg 1x,
+                ./images/favorites/gamburger-768-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width: 767px)"
+              srcset="
+                ./images/favorites/gamburger-468-1x.jpg 1x,
+                ./images/favorites/gamburger-468-2x.jpg 2x
+              "
+            />
+            <img
+              class="img"
+              src="./images/favorites/gamburger-468-1x.jpg"
+              alt="gamburger"
+              width="315"
+              height="315"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="lnk favorites__item">
+        <div class="favorites__wrapp">
+          <picture class="favorites-img">
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/Pasta-1200-1x.webp 1x,
+                ./images/favorites/Pasta-1200-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/Pasta-768-1x.webp 1x,
+                ./images/favorites/Pasta-768-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 767px)"
+              srcset="
+                ./images/favorites/Pasta-480-1x.webp 1x,
+                ./images/favorites/Pasta-480-2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/Pasta-1200-1x.jpg 1x,
+                ./images/favorites/Pasta-1200-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/Pasta-768-1x.jpg 1x,
+                ./images/favorites/Pasta-768-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width: 767px)"
+              srcset="
+                ./images/favorites/Pasta-468-1x.jpg 1x,
+                ./images/favorites/Pasta-468-2x.jpg 2x
+              "
+            />
+            <img
+              class="img"
+              src="./images/favorites/Pasta-468-1x.jpg"
+              alt="pasta"
+              width="315"
+              height="315"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="lnk favorites__item">
+        <div class="favorites__wrapp">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/pizza-1200-1x.webp 1x,
+                ./images/favorites/pizza-1200-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/pizza-768-1x.webp 1x,
+                ./images/favorites/pizza-768-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 767px)"
+              srcset="
+                ./images/favorites/pizza-480-1x.webp 1x,
+                ./images/favorites/pizza-480-2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/pizza-1200-1x.jpg 1x,
+                ./images/favorites/pizza-1200-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/pizza-768-1x.jpg 1x,
+                ./images/favorites/pizza-768-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(max-width: 767px)"
+              srcset="
+                ./images/favorites/pizza-468-1x.jpg 1x,
+                ./images/favorites/pizza-468-2x.jpg 2x
+              "
+            />
+            <img
+              class="img"
+              src="./images/favorites/pizza-468-1x.jpg"
+              alt="pizza"
+              width="315"
+              height="315"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="lnk favorites__item favorites__item--hidden">
+        <div class="favorites__wrapp">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/chicken-1200-1x.webp 1x,
+                ./images/favorites/chicken-1200-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/chicken-768-1x.webp 1x,
+                ./images/favorites/chicken-768-2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/chicken-1200-1x.jpg 1x,
+                ./images/favorites/chicken-1200-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/chicken-768-1x.jpg 1x,
+                ./images/favorites/chicken-768-2x.jpg 2x
+              "
+            />
+            <img
+              class="img"
+              src="./images/favorites/chicken-768-1x.jpg"
+              alt="chicken"
+              width="315"
+              height="315"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="lnk favorites__item favorites__item--hidden">
+        <div class="favorites__wrapp">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/salat-1200-1x.webp 1x,
+                ./images/favorites/salat-1200-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/salat-768-1x.webp 1x,
+                ./images/favorites/salat-768-2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/salat-1200-1x.jpg 1x,
+                ./images/favorites/salat-1200-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/salat-768-1x.jpg 1x,
+                ./images/favorites/salat-768-2x.jpg 2x
+              "
+            />
+            <img
+              class="img"
+              src="./images/favorites/salat-768-1x.jpg"
+              alt="salat"
+              width="315"
+              height="315"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="lnk favorites__item favorites__item--hidden">
+        <div class="favorites__wrapp">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/borshch-1200-1x.webp 1x,
+                ./images/favorites/borshch-1200-2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/borshch-768-1x.webp 1x,
+                ./images/favorites/borshch-768-2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/favorites/borshch-1200-1x.jpg 1x,
+                ./images/favorites/borshch-1200-2x.jpg 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/favorites/borshch-768-1x.jpg 1x,
+                ./images/favorites/borshch-768-2x.jpg 2x
+              "
+            />
+            <img
+              class="img"
+              src="./images/favorites/borshch-768-1x.jpg"
+              alt="borshch"
+              width="315"
+              height="315"
+            />
+          </picture>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
